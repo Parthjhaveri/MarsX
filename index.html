@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MarsX</title>
+
+
+    <!-- jQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- IMPORT THE CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- IMPORT ALL THE BOOTSTRAP -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- ALL THE GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chathura" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lateef" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chathura" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navi navbar-fixed-top">
+    
+    <!-- LOGO -->
+<!--     <img src="https://spacegrant.arizona.edu/sites/spacegrant.arizona.edu/files/about/logos/nib_web300x250ppi.png"  class="img-responsive" alt="Responsive image" id="nasalogo"> -->
+<i class="fa fa-space-shuttle" aria-hidden="true" id="logo"></i>  
+
+    <!-- MENU ICON-->
+    <span class="glyphicon glyphicon-menu-hamburger" id="ham"></span>
+    <center><p id="closemenu">X</p></center>
+</nav>
+
+<!-- MENU THATS HIDDEN ON LEFT -->
+<div class="hiddenmenu">
+    <div class="menudiv">
+        <center>
+            <ul id="ulmenu">
+                <li class="ulitem">Mars Rover pics</li>
+                <hr id="ulhr">
+                <li class="ulitem">Mission to Mars</li>
+                <hr id="ulhr">
+                <li class="ulitem">Carbon removal</li>
+                <hr id="ulhr">
+                <li class="ulitem">SpaceX News</li>
+            </ul>
+        </center>
+    </div>
+</div>
+
+<!-- EVERYTHING -->
+<div class="everything">
+        <!-- _________________________________________________ MAIN SPLASHER_________________________________________________ -->
+        <div class="mainsplasher">
+            
+            <!-- HEADING -->
+            <center><p id="heading">MARS<span id="x">X</span></p></center>
+            
+            <hr id="headinghr">
+            
+            <!-- SUBHEADING -->
+            <center><p id="exploring">Join our quest to explore the greatest challenge of our generation</p></center>
+
+            <!-- DOWN ARROW -->
+            <center><span class="glyphicon glyphicon-menu-down" id="arrow"></span></center>
+
+        </div>
+
+        <!-- _________________________________________________ CONTENT ONE_________________________________________________ -->
+        <div class="contentone">
+            
+        </div>
+</div>
+
+</body>
+
+<!-- SHOW MENU -->
+<script>
+
+    // SHOW MENU
+    $('#ham').click(function() {
+        $('.everything').css({'width':'0%'}).delay(250).fadeOut(250);
+        $('.hiddenmenu').css({'width':'100%','opacity':'1'}).delay(250).fadeIn(250);
+        $('#closemenu').css({'display':'initial', 'margin-right':'20px'}).fadeIn(250);
+        $('#ham').css({'display':'none'}).fadeOut(250);
+        $('.menudiv').css({'display':'initial'}).delay(250).fadeIn( 250 );
+    })
+
+    // HIDE MENU
+     $('#closemenu').click(function() {
+        $('.everything').css({'width':'100%'}).delay(100).fadeIn( 100 );
+        $('.hiddenmenu').css({'width':'0%'}).delay(100).fadeOut( 100 );
+        $('#closemenu').css({'display':'none'})
+        $('#ham').css({'display':'initial'})
+        $('.menudiv').css({'display':'none'})
+    })
+
+    // NAVBAR CHANGE COLOR
+    window.onscroll = function() {
+         myFunction()
+        };
+
+        function myFunction() {
+            
+            // IF YOU SCROLL DOWN PAST 500 PX, CHANGE THE NAVBAR TO WHITE
+            if (document.body.scrollTop > 500) {
+                var navbar = document.getElementsByClassName("navi");
+                $('.navi').css({'background-color':'white', 'height':'60px', 'color':'#1a1a1a'})
+            } 
+
+            // IF YOU SCROLL UP , CHANGE IT BACK TO TRANSPARENT
+            else if (document.body.scrollTop < 500) {
+                var navbar = document.getElementsByClassName("navi");
+                $('.navi').css({'background-color':'unset', 'height':'60px', 'color':'white', 'opacity':'inherit'})
+            }       
+
+        }
+
+</script>
+
+
+
+
+
+</html>

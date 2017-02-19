@@ -1,0 +1,200 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+.mainsplasher {
+	width: 100%;
+	height: 100vh;
+	background-color: #1a1a1a;
+	overflow: hidden;
+	/*font-family: 'Play', sans-serif;*/
+	font-family: 'Exo', sans-serif;
+	color: white;
+	padding-top: 200px;
+	padding-bottom: 250px;
+	background-image: url(http://www.space.com/images/i/000/050/276/original/dragon-to-mars-spacex-1920.jpg?interpolation=lanczos-none&fit=around%7C1920:1200&crop=1920:1200;*,*);
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#heading {
+	font-size: 150px;
+	letter-spacing: 10px;
+}
+
+#x {
+	font-family: 'Exo', sans-serif;
+	color: #1a1a1a;
+}
+
+#closemenu {
+	font-family: 'Exo', sans-serif;
+	color: white;
+	float: right;
+	display: inline-block;
+	font-size: 35px;
+	display: none;
+	font-weight: bolder;
+}
+
+#closemenu:hover {
+	cursor: pointer;
+}
+
+#exploring {
+	font-family: 'Chathura', sans-serif;
+	color: white;
+	font-size: 50px;
+	font-weight: lighter;
+}
+
+#headinghr {
+	width: 56%;
+	border-color: white;
+	border-width: 1px;
+	margin-top: -20px;
+}
+
+.navi {
+	width: auto;
+	height: 60px;
+	background-color: transparent;	
+	color: #f2f2f2;
+	padding: 10px;
+}
+
+#ham {
+	float: right;
+	display: inline-block;
+	font-size: 30px;
+	font-weight: lighter;
+}
+
+#ham:hover {
+	cursor: pointer;
+}
+
+#arrow {
+	font-size: 40px;
+	color: white;
+	margin-top: 80px;
+}
+
+#logo {
+	float: left;
+	display: inline-block;
+	font-size: 25px;
+	color: #f2f2f2;
+	transform: rotate(270deg);
+	border: unset;
+	border-radius: 200px;
+	width: 50px;
+	height: 50px;
+	padding: 8px;
+	margin-top: -5px;
+	display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+	
+	.mainsplasher {
+		background-image: unset;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	#heading {
+		font-size: 90px;
+		letter-spacing: 10px;
+	}
+
+	#x {
+		color: #f4d030;
+	}
+	
+	#headinghr {
+		width: 85%;
+	}
+
+	#exploring {
+		font-size: 40px;
+	}
+
+	#arrow {
+		color: #f4d030;
+	}
+
+}
+
+.contentone {
+	width: auto;
+	height: 800px;
+	background-color: #f2f2f2;
+}
+
+.hiddenmenu {
+	background-color: black;
+	position: fixed;
+	width: auto;
+	color: white;
+	height: 100vh;
+}
+
+.menudiv {
+	display: none;
+	margin-top: 500px;
+}
+
+#ulmenu {
+	margin-top: 10%;
+	list-style-type: none;
+	font-size: 80px;
+	font-family: 'Chathura', sans-serif;
+}
+
+.everything {
+	/*display: inline-block;*/
+	float: right;
+	width: 100%;
+	height: auto;
+}
+
+#ulhr {
+	width: 40%;
+	border-width: 1px;
+	border-color: #f4d030;
+}
+
+.ulitem {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+#ulmenu {
+	margin-top: 100px;
+	margin-right: 40px;
+	list-style-type: none;
+	font-size: 80px;
+	font-family: 'Chathura', sans-serif;
+}	
+
+
+#ulhr {
+	width: 80%;
+	border-width: 1px;
+	border-color: #f4d030;
+}
+
+.ulitem {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+
+}
