@@ -14,7 +14,8 @@ html, body {
 	color: white;
 	padding-top: 200px;
 	padding-bottom: 250px;
-	background-image: url(http://www.space.com/images/i/000/050/276/original/dragon-to-mars-spacex-1920.jpg?interpolation=lanczos-none&fit=around%7C1920:1200&crop=1920:1200;*,*);
+	background-image: url(http://news.nationalgeographic.com/content/dam/news/2016/04/27/red-dragon/01-red-dragon-spacex.ngsversion.1461783024554.jpg);
+	/*background-image: url(https://www.nasa.gov/sites/default/files/mars20141006b-full.jpg);*/
 	background-size: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -176,25 +177,24 @@ html, body {
 
 @media only screen and (max-width: 1200px) {
 
-#ulmenu {
-	margin-top: 100px;
-	margin-right: 40px;
-	list-style-type: none;
-	font-size: 80px;
-	font-family: 'Chathura', sans-serif;
-}	
+	#ulmenu {
+		margin-top: 100px;
+		margin-right: 40px;
+		list-style-type: none;
+		font-size: 80px;
+		font-family: 'Chathura', sans-serif;
+	}	
 
 
-#ulhr {
-	width: 80%;
-	border-width: 1px;
-	border-color: #f4d030;
-}
+	#ulhr {
+		width: 80%;
+		border-width: 1px;
+		border-color: #f4d030;
+	}
 
-.ulitem {
-	margin-top: -10px;
-	margin-bottom: -10px;
-}
-
+	.ulitem {
+		margin-top: -10px;
+		margin-bottom: -10px;
+	}
 
 }
